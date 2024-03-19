@@ -1,0 +1,15 @@
+version: '3.8'
+
+#networks:
+#  default:
+#    external: false
+#    name: equivalent_words_local_network
+
+services:
+  equivalent_words_server:
+    restart: always
+    build: .
+    ports:
+      - 8000:8000
+
+
